@@ -4,7 +4,7 @@ import Loader from './components/Loader';
 import WeatherDisplay from './components/WeatherDisplay';
 import SearchBar from './components/SearchBar';
 import { getWeatherByLocation, getWeatherByQuery, getWeatherForecastByQuery } from './services/WeatherServices';
-import '../src/styles/WeatherDisplay.css';
+import '../src/styles/WeatherDisplay.css'
 import Current from './components/current';
 import { GEO_API_URL } from './api';
 
