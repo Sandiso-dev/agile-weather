@@ -5,7 +5,7 @@ import WeatherDisplay from './components/WeatherDisplay';
 import SearchBar from './components/SearchBar';
 import { getWeatherByLocation, getWeatherByQuery, getWeatherForecastByQuery } from './services/WeatherServices';
 import '../src/styles/weatherDisplay.css'
-import Current from './components/current';
+import Current from './components/Current';
 import { GEO_API_URL } from './api';
 
 const App = () => {
