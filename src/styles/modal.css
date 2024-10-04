@@ -1,0 +1,35 @@
+.modal{
+    background: black;
+    width: 70%;
+    height: 40vh;
+    margin-left: 10%;
+    margin-top: 15%;
+    padding: 20px;
+    color: white;
+    border: 3px solid rgb(71, 168, 201);
+    border-radius: 31px;
+}
+
+.modal h1{
+    color: aqua;
+    margin-bottom: 40px;
+}
+
+.modal button{
+    padding: 10px;
+    width: 120px;
+    color: aqua;
+    border: 2px solid  white;
+    background: none;
+    border-radius: 12px;
+    margin: 10px;
+}
+
+.modal button:hover{
+    cursor: pointer;
+    transition: 1s all ease-in-out;
+    border: 1px solid aqua;
+    color: black;
+    background: white;
+}
+

@@ -1,0 +1,60 @@
+input{
+    padding: 9px;
+    border: 2px solid rgb(31, 62, 107);
+    border-radius: 12px;
+    margin-right: 20px;
+    background: none;
+    color: white;
+    font-size: 19px;
+
+}
+
+.inputBtn{
+    padding: 9px;
+    border: 2px solid rgb(31, 62, 107);
+    border-radius: 12px;
+    margin-right: 20px;
+    background: none;
+    color: white;
+    font-size: 16px;
+    display:  inline;
+    margin-top: 30px;
+    margin-left: 200px;
+}
+
+.inputBtn:hover{
+    cursor: pointer;
+    transition: 1s all ease-in-out;
+    background:  rgb(31, 62, 107);
+    border: 2px solid white;
+}
+
+.suggestions{
+    background: rgba(11, 12, 49, 0.459);
+    width: 100%;
+    height: 180px;
+    color: white;
+    border-radius: 20px;
+}
+
+.suggestions li{
+    margin-bottom: 10px;
+    width: 100px;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    input{
+        padding: 5px;
+        width: 170px;
+        font-size: 17px;
+    
+    }
+
+    .suggestions{
+        height: 140px;
+    }
+    
+    }

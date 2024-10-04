@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    background: url('../assets//bg2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+    font-family: "Afacad Flux", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+
+}
+
+.weather-app{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.time{
+   font-size: 45px;
+   margin-bottom: -20px;
+}
+.weather_info{
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin-top: 70px;
+    width: 100%;
+}
+
+.upper_part{
+    margin-left: 5%;
+    font-size: 24px;
+}
+
+.lower_part{
+    width: 100%;
+    height: 50vh;
+    top: 62%;
+    z-index: 999;
+    display: flex;
+}
+
+.weatherSearch{
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    z-index: 9999999;
+}
+
+.forecast{
+    display: flex;
+    height: 90%;
+}
+
+.today{
+    width: 25%;
+    border: 2px solid rgb(231, 226, 226);
+    border-radius: 10px;
+    background: rgba(11, 12, 49, 0.897);
+    color: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 100%;
+    font-size: 19px;
+    padding-left: 20px;
+    padding-top: 40px;
+    margin-top: -346px;
+
+
+}
+
+.forecast{
+    background: rgba(12, 13, 59, 0.445);
+    width: 74%;
+    margin-left: 25%;
+    margin-top: 50px;
+    border-radius: 20px;
+    
+}
+
+.otherDays{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    padding-left: 5px;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+    color: white;
+    
+}
+.otherDays .day{
+    width: 30%;
+    height: 70%;
+    padding: 9px;
+    margin-left: 10px;
+    color: white;
+    border-right: 3px solid white;
+}
+/* MEDIA QUERIES */
+
+/* For small screens, e.g., smartphones */
+@media only screen and (max-width: 800px) {
+    .upper_part {
+        font-size: 18px; /* Smaller text size */
+        margin-left: 5%;
+    }
+
+    .weather_info{
+        margin-top: -10px;
+        position: relative;
+    }
+    .today {
+        width: 90%; /* Full width for mobile */
+        margin-left: 10px;
+        font-size: 16px;
+        height: 130px;
+        padding-top: 10px;
+        position: absolute;
+        top: 45%;
+        margin-top: -200px;
+        background: rgba(12, 13, 59, 0.295);
+        border-radius: 20px;
+    }
+
+    .otherDays {
+        width: 95%;
+        margin-left: 0;
+        flex-direction: column; 
+    }
+
+    .forecast{
+        width: 95%;
+        height: 50vh;
+        margin-top: 170px;
+        overflow: scroll;
+        margin-left: 0;
+        background: none;
+    
+    }
+    .otherDays .day {
+        width: 100%; /* Full width for mobile */
+        height: 130px;
+        font-size: 18px;
+        margin: 10px 0;
+        padding-top: 0px;
+        background: rgba(12, 13, 59, 0.548);
+        border-radius: 20px;
+        display: flex;
+    }
+
+    .day p{
+        display: inline;
+        margin-right: 10px;
+    }
+
+    .weatherSearch {
+        top: 5%;
+        left: 49%;
+        width: 90%; /* Adjust width for search bar */
+    }
+}
