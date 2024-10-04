@@ -60,7 +60,7 @@ const Forecast = ({ data }) => {
           }}
           >{new Date(item.dt * 1000).toLocaleDateString('en-US', { weekday: 'long' })}</h3>
           <p>{item.weather[0].description}</p>
-          <p>Temp: {Math.round(item.main.temp - 273.15)}°C</p>
+          <p>Temp: {Math.round(item.main.temp)}°C</p>
           <p>Wind: {item.wind.speed} m/s</p>
           </div>
         </div>
