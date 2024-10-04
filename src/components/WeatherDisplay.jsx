@@ -4,13 +4,14 @@ import '../styles/weatherDisplay.css';
 
 const WeatherDisplay = ({ currentData, forecastData }) => {
   const timezoneOffset = currentData.timezone; // Offset in seconds
-  const localTime = new Date(Date.now() + timezoneOffset * 1000); // Calculate local time
-
+  const twoHourOffset = 2 * 60 * 60 * 1000; // Two hours in milliseconds
+  const localTime = new Date(Date.now() + timezoneOffset * 1000 - twoHourOffset); // Adjust for two hours behind
+  
   const currentTime = localTime.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
   const currentDate = localTime.toLocaleDateString();
   const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const currentDay = daysOfWeek[localTime.getUTCDay()];
-
+  
   return (
     <>
       <div className="timeAndDay" style={{ color: "white" }}>
