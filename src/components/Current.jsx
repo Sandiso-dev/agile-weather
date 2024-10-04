@@ -24,7 +24,7 @@ const Current = ({data}) => {
 
             <div className="des">
             <h3>Today</h3>               
-            <p>Temp: {Math.round(data.main.temp - 273.15)}°C</p>
+            <p>Temp: {Math.round(data.main.temp)}°C</p>
             <p>Weather: {data.weather[0].description}</p>
             </div>
      </div>
