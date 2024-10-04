@@ -1,7 +1,6 @@
-// WeatherDisplay.js
 import React from 'react';
-import Forecast from './Forecast'; // Ensure the import path is correct
-import '../styles/WeatherDisplay.css';
+import Forecast from './Forecast'; 
+import '../styles/weatherDisplay.css';
 
 const WeatherDisplay = ({ currentData, forecastData }) => {
   const timezoneOffset = currentData.timezone; // Offset in seconds

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/WeatherDisplay.css';
+import '../styles/weatherDisplay.css';
 
 const Forecast = ({ data }) => {
   // Safety check: If data or data.list is undefined, return null or a loading state
